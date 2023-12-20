@@ -1,0 +1,20 @@
+- colocar a base de dados no mesmo "diretório" do arquivo python ajuda muito
+- pandas permite que você trabalhe com excel no python (trabalha com tabelas)
+- biblioteca/módulo: é meio que um conjunto de códigos que permite que você integre uma coisa a outra, por exemplo python
+com excel
+- import pandas as pd: importa a biblioteca "pandas" com um "apelido" (que no caso será pd)
+- pip install nomedabiblioteca: instala a biblioteca desejada
+- pandas precisa de outro pacote chamado "openpyxl", que serve para abrir arquivos excel
+- estrutura do set_option(): set_option(opção, valor)
+- pd.set_option('display.max_columns', None) --> diz pro python que não tem um máximo de colunas, o None faz com que
+sejam mostradas todas as colunas
+- ticket médio: é o faturamento / quantidade, basicamente pra saber quanto em média custou um produto em cada loja
+- são colocados dois [[]] quando houver mais de um valor a ser passado
+- to_frame() --> transforma em tabela
+- pywin32 --> integra python e windows
+- password --> é a senha de app que o google dá, não a senha da sua conta do gmail
+
+Duas formas de filtrar tabela:
+- tabela_vendas[['ID Loja', 'Valor Final']] --> filtra as colunas que estão entre os []
+- tabela_vendas.groupby('ID Loja').sum() --> agrupa todas as lojas (iguais) e soma todas as outras colunas
+- tabela_vendas[['ID Loja', 'Valor Final']].groupby('ID Loja').sum() --> junção das duas formas
